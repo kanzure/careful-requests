@@ -14,3 +14,6 @@ clean:
 	rm -fr *.egg-info
 	find . -type f -name "*.pyc" -exec rm '{}' \;
 
+install:
+	python setup.py install
+

@@ -28,6 +28,10 @@ Install
 
 .. code-block:: bash
 
+    sudo pip install careful-requests
+
+.. code-block:: bash
+
     sudo python setup.py install
 
 Testing

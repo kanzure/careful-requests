@@ -3,14 +3,13 @@ from setuptools import setup
 
 setup(
     name="careful-requests",
-    version="0.1.0",
+    version="0.1.1",
     url="https://github.com/kanzure/careful-requests",
     license="BSD",
     author="Bryan Bishop",
     author_email="kanzure@gmail.com",
     description="Requests for header-sensitive servers (like Accept-Encoding)",
     long_description=open("README.rst", "r").read(),
-    py_modules=["careful_requests"],
     packages=["careful_requests"],
     zip_safe=False,
     include_package_data=True,
@@ -31,6 +30,5 @@ setup(
         "Programming Language :: Python :: 3.1",
         "Programming Language :: Python :: 3.2",
         "Programming Language :: Python :: 3.3",
-        "Programming Language :: Python :: 3.4",
     ]
 )
