@@ -24,6 +24,7 @@ from requests.packages.urllib3.connectionpool import (
     VerifiedHTTPSConnection,
     HTTPConnectionPool,
     HTTPSConnectionPool,
+    ssl
 )
 
 from requests.packages.urllib3.request import RequestMethods

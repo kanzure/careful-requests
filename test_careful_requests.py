@@ -24,5 +24,13 @@ class TestCarefulHTTPAdapter(unittest.TestCase):
         self.assertIn("host", response_headers)
         self.assertNotIn("accept-encoding", response_headers)
 
+    def test_https(self):
+        response = self.session.get("https://httpbin.org/get", headers={})
+        self.assertIn("host", lower_keys(json.loads(response.text)["headers"]))
+
+    def test_https_skip_accept_encoding(self):
+        response = self.session.get("https://httpbin.org/get", headers={}, omit_headers=["accept-encoding"])
+        self.assertNotIn("accept-encoding", lower_keys(json.loads(response.text)["headers"]))
+
 if __name__ == "__main__":
     unittest.main()
