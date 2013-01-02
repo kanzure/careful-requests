@@ -70,7 +70,10 @@ class CarefulHTTPConnection(HTTPConnection):
             # RFC 2616 Section 3.7.1 says that text default has a
             # default charset of iso-8859-1.
             body = body.encode('iso-8859-1')
-        self.endheaders(body)
+        try:
+            self.endheaders(body)
+        except TypeError as exception: # py26
+            raise exception
 
 try: # Compiled with SSL?
     try: # Python 3
