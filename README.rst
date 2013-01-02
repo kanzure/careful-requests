@@ -1,10 +1,13 @@
 careful-requests
 ~~~~~~~~~~~~~~~
 
-This module provides an HTTP adapter for servers that are over-sensitive to
-HTTP headers. It may be sad, but not all HTTP servers are HTTP-compliant and
-some are suspicious of otherwise normal headers! Use careful-requests if you
-still want to use the excellent Requests module.
+This module provides an HTTP adapter and session for use with `Requests`_ when
+communicating with servers that are hyper-sensitive to standard HTTP headers.
+It may be sad, but not all HTTP servers are HTTP-compliant and some are even
+suspicious of normal headers. Use careful-requests if you still want to use the
+excellent Requests module.
+
+.. _`Requests`: http://python-requests.org/
 
 Example usage
 ----------
