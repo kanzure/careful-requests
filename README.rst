@@ -8,9 +8,23 @@ still want to use the excellent Requests module.
 
 Example usage::
 
+here you go
+
     from careful_requests import Careful
 
     s = Careful()
 
     >>> s.get("http://httpbin.org/get", omit_headers=["accept-encoding"])
     <Response [200]>
+
+Install::
+
+    sudo python setup.py install
+
+Testing::
+
+    make test
+
+License::
+
+BSD
