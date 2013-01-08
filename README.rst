@@ -46,8 +46,7 @@ Testing
 Changelog
 ----------
 
-* 0.1.3: support both requests==1.0.4 and requests==0.14.2, which is useful for
-proxy support.
+* 0.1.3: support both requests==1.0.4 and requests==0.14.2, which is useful for proxy support.
 
 * 0.1.2: HTTPS
 
