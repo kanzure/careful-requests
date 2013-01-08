@@ -20,8 +20,10 @@ here you go
 
     s = Careful()
 
-    >>> s.get("http://httpbin.org/get", omit_headers=["accept-encoding"])
+    >>> s.get("http://httpbin.org/get")
     <Response [200]>
+
+"Accept-Encoding" will not be sent.
 
 Install
 ----------
@@ -40,6 +42,14 @@ Testing
 .. code-block:: bash
 
     make test
+
+Changelog
+----------
+
+* 0.1.3: support both requests==1.0.4 and requests==0.14.2, which is useful for
+proxy support.
+
+* 0.1.2: HTTPS
 
 License
 ----------
