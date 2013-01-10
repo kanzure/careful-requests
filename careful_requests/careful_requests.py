@@ -98,6 +98,15 @@ requests.packages.urllib3.connectionpool.HTTPConnection = CarefulHTTPConnection
 requests.packages.urllib3.connectionpool.HTTPSConnection = CarefulHTTPSConnection
 requests.packages.urllib3.connectionpool.VerifiedHTTPSConnection = CarefulVerifiedHTTPSConnection
 
+def _set_proxy_headers(self, headers=None):
+    headers = headers or {}
+
+    # headers['Accept'] = '*/*'
+    # headers['Proxy-Connection'] = 'Keep-Alive'
+
+    return headers
+requests.packages.urllib3.poolmanager.ProxyManager._set_proxy_headers = _set_proxy_headers
+
 class CarefulSession(requests.sessions.Session):
     def __init__(self, *args, **kwargs):
         config = {}
