@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="careful-requests",
-    version="0.1.4",
+    version="0.1.5",
     url="https://github.com/kanzure/careful-requests",
     license="BSD",
     author="Bryan Bishop",
@@ -13,7 +13,7 @@ setup(
     packages=["careful_requests"],
     zip_safe=False,
     include_package_data=True,
-    install_requires=["requests"],
+    install_requires=["requests>=0.14.2"],
     platforms="any",
     classifiers=[
         "Environment :: Web Environment",

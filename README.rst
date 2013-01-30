@@ -46,7 +46,9 @@ Testing
 Changelog
 ----------
 
-* 0.1.4: override _set_proxy_headers to not send "Accept" headers to the proxy
+* 0.1.5: fix dependencies to allow requests>=0.14.2 to stop installing the latest version.
+
+* 0.1.4: override _set_proxy_headers to not send "Accept" headers to the proxy.
 
 * 0.1.3: support both requests==1.0.4 and requests==0.14.2, which is useful for proxy support.
 
